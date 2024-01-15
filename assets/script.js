@@ -27,6 +27,8 @@ if(password.length >=8 && password.length <=128){
     }
     if(numericConfirm === true){
         password.choices+="0123456789";
+    }else{
+        window.confirm("Please choose at least one character type")
     }
     //call genPass function to generate the password
 genPass ();
