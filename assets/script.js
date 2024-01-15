@@ -12,7 +12,7 @@ function writePassword() {
 //if length input is valid, confirm characters to include
 if(password.length >=8 && password.length <=128){
     var lowerCaseConfirm = window.confirm("Do you want to include lowercase characters?");
-    var upperCaseConfirm = window.confirm("Do you want to include upper case characters?");
+    var upperCaseConfirm = window.confirm("Do you want to include uppercase characters?");
     var specialCharacterConfirm = window.confirm("Do you want to include special characters?");
     var numericConfirm = window.confirm("Do you want to include numeric characters?");
     //add characters to empty string 'choices' based on user input
@@ -32,16 +32,14 @@ if(password.length >=8 && password.length <=128){
 genPass ();
 //if password length is invalid, user must try again
 }else if(password.length <8 || password.length >128){
-    window.alert("Invalid Lenght. Please try again.")
+    window.alert("Invalid Length. Please try again.")
 }
 //generate a random password with characters from 'choices'
 function genPass() {
     for (var i=0; i<=password.length; i++){
         password.finalPassword+=password.choices[Math.floor(Math.random()* password.choices.length)];
     };
-    // console.log(password.finalPassword)
     var passwordText = document.querySelector("#password");
-
     passwordText.value = password.finalPassword;
 }
 }
