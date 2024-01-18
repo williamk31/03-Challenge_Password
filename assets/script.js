@@ -38,7 +38,7 @@ genPass ();
 }
 //generate a random password with characters from 'choices'
 function genPass() {
-    for (var i=0; i<=password.length; i++){
+    for (var i=0; i<=password.length-1; i++){
         password.finalPassword+=password.choices[Math.floor(Math.random()* password.choices.length)];
     };
     var passwordText = document.querySelector("#password");

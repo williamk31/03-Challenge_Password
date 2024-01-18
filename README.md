@@ -9,6 +9,8 @@ See screenshot for reference:
 
 ![Screenshot](assets/images/03-javascript-homework-demo.png)
 
+And a link to the deployed application: https://williamk31.github.io/03-Challenge_Password
+
 ### Contributors
 Made by William Kalish
 Starter code provided by the DU FullStack Web Development Bootcamp Team
